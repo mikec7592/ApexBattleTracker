@@ -1,9 +1,11 @@
-import { View, Text, StyleSheet, Flatlist, Button, } from 'react-native';
+import { View, Text, StyleSheet, Flatlist, Button, ScrollView } from 'react-native';
+import MenuBar from '../components/menuBar';
 import mapSelection from '../components/mapSelection';
 
 const HomeScreen = () => {
     return (
-        <View>
+        <View style={styles.background}>
+            <MenuBar/>
             {/* <Text>Apex Battle Tracker</Text>
             <ScrollView>
                 <mapSelection/>

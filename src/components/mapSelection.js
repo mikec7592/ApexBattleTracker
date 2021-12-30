@@ -1,11 +1,12 @@
-import { map } from 'lodash'
+// import { map } from 'lodash'
 import React from 'react'
 import { View, Image, StyleSheet, Text } from "react-native"
+// import { withNavigation } from 'react-navigation';
  
-const mapSelection = () => {
+const mapSelection = ({name, navigation}) => {
     return (
-        <View>
-            <Image/>
+        <View style={styles.container}>
+            <Image style={styles.image}/>
             {/* <Text style= {styles.name} >{map.name}</Text> */}
         </View>
     )
