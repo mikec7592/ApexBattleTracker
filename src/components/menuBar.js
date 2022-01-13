@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     },
     iconStyle: {
         fontSize: 35,
-        alignSelf: 'left',
+        alignSelf: 'flex-start'
         // marginHorizontal: 10,
     }
 });

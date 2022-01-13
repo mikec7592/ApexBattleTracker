@@ -16,12 +16,12 @@ import { View, Image, Text, StyleSheet } from 'react-native'
 
      },
      background: {
-         backgroundColor: 'dodger blue',
+         backgroundColor: 'blue',
      },
      mapName: {
          fontSize: 45,
          fontWeight: 'bold',
-         flex: 'center'
+         alignSelf: 'center'
      },
  });
 
