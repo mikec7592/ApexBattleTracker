@@ -5,6 +5,7 @@ import { View, Image, Text, StyleSheet } from 'react-native'
      return (
          <View>
              <Image/>
+             <Text>Map Screen</Text>
          </View>
      );
  };

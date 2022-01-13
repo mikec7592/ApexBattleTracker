@@ -1,12 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-// import { icon } from '@expo/vector-icons'
+import { AntDesign } from '@expo/vector-icons';
+
 
 const MenuBar = () => {
     return (
         <View>
-            {/* <Icon name='' style={StyleSheet.iconStyle}/> */}
-            <Text>YYuuuurrr</Text>
+            <AntDesign name="infocirlce" size={24} color="black" />
+            <Text></Text>
         </View>
     );
 };

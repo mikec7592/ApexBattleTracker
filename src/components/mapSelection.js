@@ -1,13 +1,20 @@
 // import { map } from 'lodash'
 import React from 'react'
-import { View, Image, StyleSheet, Text } from "react-native"
-// import { withNavigation } from 'react-navigation';
+import { View, Image, StyleSheet, Text, TouchableOpacity } from "react-native"
+import { withNavigation } from 'react-navigation';
  
-const mapSelection = ({name, navigation}) => {
+const MapSelection = ({name, navigation}) => {
     return (
         <View style={styles.container}>
-            <Image style={styles.image}/>
-            {/* <Text style= {styles.name} >{map.name}</Text> */}
+            <TouchableOpacity
+            onPress={()=> 
+            navigation.navigate('Map')
+            }
+            >
+                <Image style={styles.image}/>
+                {/* <Text style= {styles.name} >{map.name}</Text> */}
+                <Text>YYYoooooo</Text>
+            </TouchableOpacity>
         </View>
     )
 };
@@ -25,4 +32,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default mapSelection
+export default withNavigation(MapSelection);

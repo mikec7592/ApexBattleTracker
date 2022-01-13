@@ -1,18 +1,18 @@
 import { View, Text, StyleSheet, Flatlist, Button, ScrollView } from 'react-native';
 import MenuBar from '../components/menuBar';
-import mapSelection from '../components/mapSelection';
+import MapSelection from '../components/MapSelection';
 
 const HomeScreen = () => {
     return (
         <View style={styles.background}>
             <MenuBar/>
-            {/* <Text>Apex Battle Tracker</Text>
+            <Text style={styles.titleStyle}>Apex Battle Tracker</Text>
             <ScrollView>
-                <mapSelection/>
-                <mapSelection/>
-                <mapSelection/>
-                <mapSelection/>
-            </ScrollView> */}
+                <MapSelection/>
+                <MapSelection/>
+                <MapSelection/>
+                <MapSelection/>
+            </ScrollView>
         </View>
     )
 };
@@ -20,7 +20,14 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
     background: {
         backgroundColor: 'beige'
+    },
+    titleStyle: {
+        fontSize: 25,
+        fontWeight: 'bold',
+        alignSelf: 'center'
     }
 });
 
 export default HomeScreen;
+
+// Add ghost container element 
