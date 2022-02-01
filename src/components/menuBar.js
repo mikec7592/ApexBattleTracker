@@ -1,12 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
-
+import { MaterialIcons } from '@expo/vector-icons';
 
 const MenuBar = () => {
     return (
-        <View>
+        <View style={styles.backgroundStyle}> 
             <AntDesign name="infocirlce" size={24} color="black" />
+            <MaterialIcons name="login" size={24} color="black" />
             <Text></Text>
         </View>
     );

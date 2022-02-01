@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Image, StyleSheet, Text, TouchableOpacity } from "react-native"
 import { withNavigation } from 'react-navigation';
  
-const MapSelection = ({name, navigation}) => {
+const MapSelection = ({mapName, navigation, mapPreview}) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity
@@ -11,9 +11,10 @@ const MapSelection = ({name, navigation}) => {
             navigation.navigate('Map')
             }
             >
-                <Image style={styles.image}/>
-                {/* <Text style= {styles.name} >{map.name}</Text> */}
-                <Text>YYYoooooo</Text>
+            <Text style={styles.name}>{mapName}</Text>
+            <Image 
+            source={{uri: mapPreview}}
+            style={styles.image}/>
             </TouchableOpacity>
         </View>
     )
@@ -21,11 +22,11 @@ const MapSelection = ({name, navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft: 50,
+        marginLeft: 37,
     },
     image: {
-        width: 250,
-        height: 125,
+        width: 290,
+        height: 175,
     },
     name: {
         fontWeight: 'bold',
