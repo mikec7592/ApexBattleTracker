@@ -26,7 +26,9 @@ import { View, Image, Text, StyleSheet, Button, Animated, useWindowDimensions } 
              });
          }}
          >
-             <Button title = 'Add a marker'
+             <Button 
+             style ={styles.button}
+             title = 'Add a marker'
              onPress={() => {
                  setMarkers([...markers, createMarker()])
              }}
@@ -61,6 +63,10 @@ import { View, Image, Text, StyleSheet, Button, Animated, useWindowDimensions } 
         //  left: touch.x,
         //  top: touch.y,
      },
+     button: {
+         backgroundColor: 'orange',
+         textDecorationColor: 'red'
+     }
  });
 
  export default MapScreen
