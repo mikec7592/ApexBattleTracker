@@ -1,11 +1,18 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Button } from 'react-native';
 
-const GameDetailsScreen = () => {
-    return <Text style={{ fontSize: 30 }}> GameDetailsScreen</Text>
+const GameListScreen = ({ navigation }) => {
+    return (
+        <>
+            <Text style={{ fontSize: 40 }}>GameListScreen</Text>
+            <Button 
+            title='Go to Game Details'
+            onPress={() => navigation.navigate('GameDetail')} />
+        </>
+    ) 
 };
 
 const styles = StyleSheet.create({});
 
-export default GameDetailsScreen;
+export default GameListScreen;
  

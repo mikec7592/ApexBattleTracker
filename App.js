@@ -2,7 +2,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack' 
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import HomeScreen from './src/screens/homeScreen'
-import loginScreen from './src/screens/loginScreen';
+import SigninScreen from './src/screens/signinScreen';
 import MapScreen from './src/screens/mapScreen';
 import AccountScreen from './src/screens/accountScreen';
 import GameListScreen from './src/screens/gameListScreen';
@@ -13,7 +13,7 @@ import SignupScreen from './src/screens/signupScreen';
 const switchNavigator = createSwitchNavigator({
   loginFlow: createStackNavigator({
     Signup: SignupScreen,
-    Login: loginScreen
+    Signin: SigninScreen
   }),
   mainFlow: createBottomTabNavigator({
     gameDetailFlow: createStackNavigator({
