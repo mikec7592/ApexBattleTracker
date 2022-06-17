@@ -11,8 +11,10 @@ import GameDetailsScreen from './src/screens/gameDetailsScreen';
 import SignupScreen from './src/screens/signupScreen';
 import { Provider as AuthProvider } from './src/context/AuthContext'
 import { setNavigator } from './src/navigationRef';
+import loadingScreen from './src/screens/loadingScreen';
 
 const switchNavigator = createSwitchNavigator({
+  loading: loadingScreen,
   loginFlow: createStackNavigator({
     Signup: SignupScreen,
     Signin: SigninScreen
